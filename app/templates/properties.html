@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+{%block main%}
+<h1>PROPERTIES</h1>
+
+<div class="img-con">
+{%for i in range(0,len) %}
+
+    <div class="card">
+        <section class="top">
+            <img src="{{url_for('getimage',filename=info[i].photo)}}" alt="images">
+        </section>
+        <section class="data">
+            <div id="info"><h5>{{info[i].title}} </h2> </div>
+            <div id="info"><p><img src="/static/location.png" class="icon"> {{info[i].location}} </p> </div>
+            <div id="pric"> <p>  ${{info[i].price}}  </p> </div>
+                    
+        </section>
+        <a href="http://192.168.10.102:8080/properties/{{info[i].id}}">View Property</a>
+     </div>
+{%endfor%}
+
+</div>
+
+{%endblock%}
