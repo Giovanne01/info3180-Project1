@@ -74,8 +74,7 @@ button{
     border-radius: 0px;
 }
 .data{
-    padding-left: 2%;
-    padding-top: 1%;
+    
 }
 .icon{
     width: 20px;
@@ -142,4 +141,7 @@ button{
 }
 .data div{
     padding-bottom: 3%;
+    padding-left: 2%;
+    padding-top: 1%;
+
 }
