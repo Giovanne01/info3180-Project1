@@ -59,11 +59,9 @@ button{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     padding-top: 2%;
-    padding-bottom: 2%;
 }
-.data{
-    padding: 2%;
-}
+
+
 #email{
     width: 100%;
     background-color: #0d6efd;
