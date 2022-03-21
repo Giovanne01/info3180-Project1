@@ -1,6 +1,7 @@
 from . import db
 
 class AddProperty(db.Model):
+    __tablename__ = 'property'
 
     id = db.Column(db.Integer, primary_key = True)
     title= db.Column(db.String(255))
