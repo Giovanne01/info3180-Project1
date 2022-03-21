@@ -137,6 +137,7 @@ button{
     background-color: #df0d4c;
     color: white;
     padding: 0 2%0 2%;
+    padding-left: 2%;
     font-weight: bolder;
 }
 .data div{
