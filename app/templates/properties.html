@@ -3,19 +3,19 @@
 <h1>PROPERTIES</h1>
 
 <div class="img-con">
-{%for i in range(0,len) %}
+{%for image in info %}
 
     <div class="card">
         <section class="top">
-            <img src="{{url_for('getimage',filename=images[i])}}" alt="images">
+            <img src="{{url_for('getimage',filename=image.photo)}}" alt="images">
         </section>
         <section class="data">
-            <div id="info"><h5>{{info[i].title}} </h2> </div>
-            <div id="info"><p><img src="/static/location.png" class="icon"> {{info[i].location}} </p> </div>
-            <div id="pric"> <p>  ${{info[i].price}}  </p> </div>
+            <div id="info"><h5>{{image.title}} </h2> </div>
+            <div id="info"><p><img src="/static/location.png" class="icon"> {{image.location}} </p> </div>
+            <div id="pric"> <p>  ${{image.price}}  </p> </div>
                     
         </section>
-        <a href="http://192.168.10.102:8080/properties/{{info[i].id}}">View Property</a>
+        <a href="{{url_for('prop1',id=image.id)}}">View Property</a>
      </div>
 {%endfor%}
 

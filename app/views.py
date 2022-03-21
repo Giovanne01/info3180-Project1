@@ -63,9 +63,8 @@ def create():
     
 @app.route('/properties')
 def properties():
-    images= get_upload_images()
     info= AddProperty.query.all()
-    return render_template('properties.html',images=images,info=info, len=len(images))
+    return render_template('properties.html',info=info)
 
 @app.route('/properties/<id>')
 def prop1(id):
