@@ -46,6 +46,9 @@ a{
     transform: scale(1.1);
     transition: all 1s ease;
 }
+.data{
+    padding: 2%;
+}
 
 img{
     width:100%;
