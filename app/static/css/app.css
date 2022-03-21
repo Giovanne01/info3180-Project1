@@ -40,15 +40,13 @@ a{
     border: 1px solid #0d6efd;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     margin-bottom: 10%;
-
+    padding: 2%;
 }
 .card:hover{
     transform: scale(1.1);
     transition: all 1s ease;
 }
-.data{
-    padding: 2%;
-}
+
 
 img{
     width:100%;
@@ -94,6 +92,7 @@ button{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 2%;
 }
 
 .card1:hover{
